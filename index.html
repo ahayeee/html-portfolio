@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="Envelope.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong style="font-size: 16px;">Dear Hamna</strong>
+                        <p>
+                            My love, even though miles stand between us, you’re always so close to my heart. 
+                            I never thought I'd feel this way about someone I've yet to hold, yet here I am, 
+                            dreaming of the day I can finally make you blush in person. 
+                            Just thinking about the moment I get to look into your eyes for real makes my heart race. 
+                            I’ll be counting down until I can wrap my arms around you – because you're already wrapped up in 
+                            my thoughts every single day. Until then,
+                            I’ll keep falling for you, one text at a time. Can’t wait to be yours completely.<br><br>
+                            From Hayee♥
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
